@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100|Poppins:200|ZCOOL+KuaiLe');
+
+
+/* Here is the content */
+
+main {
+    padding: 0 15px;
+}
+
+.my_content {
+    color: #ccc;
+    margin-bottom: 50px;
+}
+
+.my_content .block {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.my_content .block .first {
+    padding: 20px;
+    margin: 10px auto;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.my_content .block .modal {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    margin: 7px auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my_content .block .modal ul {
+    list-style: none;
+}
+
+.my_content .block .modal ul p {
+    margin: 5px;
+}
+
+
+/* test */

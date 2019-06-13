@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animations</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/animate.js"></script> -->
+    <!-- <link rel="stylesheet" href="css/anim.css"> -->
+    <style>
+        .wrapper{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            margin-top: 570px;
+            margin-bottom: 20px;
+        }
+        .block1{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            margin: auto auto 60px auto;
+
+            transform: translateX(-50%) scale(0.8);
+            opacity: 0;
+            transition: transform 450ms ease-in-out;
+        }
+        .block2{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            margin: auto auto 60px auto;
+
+            transform: translateX(50%) scale(0.8);
+            opacity: 0;
+            transition: transform 450ms ease-in-out;
+        }
+        .active{
+            transform: translateX(0%) scale(1);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+        <!-- <div class="block animatable bounceIn">bounceIn</div> -->
+        
+    <div class="wrapper"></div>
+    <div class="block1 animatable bounceInLeft">bounceInLeft</div>
+        <div class="block2 animatable bounceInRight">bounceInRight</div>
+        
+        <!-- <div class="block animatable fadeIn">fadeIn</div>
+        <div class="block animated fadeInDown">fadeInDown</div>
+        <div class="block animatable fadeInUp">fadeInUp</div>
+        <div class="block animatable moveUp">moveUp</div>
+        <div class="block animatable fadeBgColor">fadeBgColor</div>
+        
+        <div class="block animatable bounceIn">bounceIn</div>
+        <div class="block animatable bounceInLeft">bounceInLeft</div>
+        <div class="block animatable bounceInRight">bounceInRight</div>
+        <div class="block animatable fadeIn">fadeIn</div>
+        <div class="block animated fadeInDown">fadeInDown</div>
+        <div class="block animatable fadeInUp">fadeInUp</div>
+        <div class="block animatable moveUp">moveUp</div>
+        <div class="block animatable fadeBgColor">fadeBgColor</div>
+        
+        <div class="block animatable bounceIn">bounceIn</div>
+        <div class="block animatable bounceInLeft">bounceInLeft</div>
+        <div class="block animatable bounceInRight">bounceInRight</div>
+        <div class="block animatable fadeIn">fadeIn</div>
+        <div class="block animated fadeInDown">fadeInDown</div>
+        <div class="block animatable fadeInUp">fadeInUp</div>
+        <div class="block animatable moveUp">moveUp</div>
+        <div class="block animatable fadeBgColor">fadeBgColor</div>
+        
+        <div class="block animatable bounceIn">bounceIn</div>
+        <div class="block animatable bounceInLeft">bounceInLeft</div>
+        <div class="block animatable bounceInRight">bounceInRight</div>
+        <div class="block animatable fadeIn">fadeIn</div>
+        <div class="block animated fadeInDown">fadeInDown</div>
+        <div class="block animatable fadeInUp">fadeInUp</div>
+        <div class="block animatable moveUp">moveUp</div>
+        <div class="block animatable fadeBgColor">fadeBgColor</div>
+        
+        <div class="block animatable bounceIn">bounceIn</div>
+        <div class="block animatable bounceInLeft">bounceInLeft</div>
+        <div class="block animatable bounceInRight">bounceInRight</div>
+        <div class="block animatable fadeIn">fadeIn</div>
+        <div class="block animated fadeInDown">fadeInDown</div>
+        <div class="block animatable fadeInUp">fadeInUp</div>
+        <div class="block animatable moveUp">moveUp</div>
+        <div class="block animatable fadeBgColor">fadeBgColor</div>
+        
+        <div class="block animatable bounceIn">bounceIn</div>
+        <div class="block animatable bounceInLeft">bounceInLeft</div>
+        <div class="block animatable bounceInRight">bounceInRight</div>
+        <div class="block animatable fadeIn">fadeIn</div>
+        <div class="block animated fadeInDown">fadeInDown</div>
+        <div class="block animatable fadeInUp">fadeInUp</div>
+        <div class="block animatable moveUp">moveUp</div>
+        <div class="block animatable fadeBgColor">fadeBgColor</div> -->
+    </div>
+
+    <script src="js/trying-anim.js"></script>
+
+</body>
+      
+</html>

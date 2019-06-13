@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="css/dashboard.css"> -->
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/dashboard-staff.css">
+</head>
+
+<body>
+
+    <aside class="side-nav" id="show-side-navigation1">
+        <div class="heading">
+            <img src="img/profile.jpg" alt="profile_image">
+            <div class="info">
+                <h3><a href="dashboard-profile.html">Patricia</a></h3>
+                <p>Can't seem to rest because of internship</p>
+            </div>
+        </div>
+
+        <ul class="categories">
+
+            <li>
+                <i class="fa fa-group"></i>
+                <a href="#" class="arrow"> Applicants</a>
+                <ul class="side-nav-dropdown">
+                    <li><a href="dashboard-staff-applicants.html">list of Applicants</a></li>
+                    <li><a href="dashboard-staff-applicants-print.html">Print list of Applicants</a></li>
+                </ul>
+            </li>
+
+            <!-- <li>
+                        <i class="fa fa-file-text-o"></i>
+                        <a href="#"> View Reslults</a>
+                    </li> -->
+
+            <li>
+                <i class="fa fa-user"></i>
+                <a href="dashboard-profile.html"> Profile</a>
+            </li>
+
+            <li>
+                <i class="fa fa-gear"></i>
+                <a href="#" class="arrow"> Settings</a>
+                <ul class="side-nav-dropdown">
+                    <li><a href="dashboard-change-password.html">Change Password</a></li>
+                    <li><a href="dashboard-change-email.html">Change Email</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+
+    <section id="contents">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header mynav">
+                <a class="navbar-brand" href="dashboard-staff.html"><span class="main-color"><i
+                            class="fa fa-home fa-fw"></i></span>Dashboard</a>
+
+                <div class="nav_content">
+                    <!-- notication bell -->
+                    <div class="noti_conatiner">
+                        <ul>
+                            <li id="noti_Container">
+                                <div id="noti_Counter"></div>
+                                <!--SHOW NOTIFICATIONS COUNT.-->
+
+                                <!--A CIRCLE LIKE BUTTON TO DISPLAY NOTIFICATION DROPDOWN.-->
+                                <div id="noti_Button"><i class="fa fa-bell"></i></div>
+
+                                <!--THE NOTIFICAIONS DROPDOWN BOX.-->
+                                <div id="notifications">
+                                    <h3>Notifications</h3>
+                                    <div style="height:300px;">
+                                        <ul>
+                                            <li>mathisda</li>
+                                            <li>isfas sda fsd fsd fsd</li>
+                                            <li>fsdaf sa dfsd fsd fsd </li>
+                                            <li>fasdf sd fsda f sdf sad fsd</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form action="" method="post">
+                        <button type="submit"><span class="log-out"><i class="fa fa-sign-out"></i></span>
+                            Logout</button>
+                    </form>
+                </div>
+
+                <span class="drop-bar" id="drop_bar"><i class="fa fa-bars"></i></span>
+            </div>
+
+            <div class="drop_aside">
+                <ul class="categories">
+
+                    <li>
+                        <i class="fa fa-folder"></i>
+                        <a href="#" class="arrow"> Applicants</a>
+                        <ul class="resize-nav-dropdown">
+                            <li><a href="dashboard-staff-applicants.html">list of Applicants</a></li>
+                            <li><a href="dashboard-staff-applicants-print.html">Print list of Applicants</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- <li>
+                                <i class="fa fa-file-text-o"></i>
+                                <a href="#"> View Reslults</a>
+                            </li> -->
+
+                    <li>
+                        <i class="fa fa-user"></i>
+                        <a href="dashboard-profile.html"> Profile</a>
+                    </li>
+
+                    <li>
+                        <i class="fa fa-gear"></i>
+                        <a href="#" class="arrow"> Settings</a>
+                        <ul class="resize-nav-dropdown">
+                            <li><a href="dashboard-change-password.html">Change Password</a></li>
+                            <li><a href="dashboard-change-email.html">Change Email</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        <!-- this is where i'm starting -->
+        <main>
+            <!-- error and messages -->
+            <div class="alert">
+                <ul>
+                    <li class="error"><span>This is an error message span</span><span><i class="fa fa-times"></i></span>
+                    </li>
+                    <li class="success"><span class="message">This is a success message</span><span><i
+                                class="fa fa-times"></i></span></li>
+                </ul>
+            </div>
+
+            <!-- body of the dashboard -->
+            <div class="welcome">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="content">
+                                <h2>Welcome to Staff Dashboard</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="my_content">
+
+            </div>
+        </main>
+
+        <!-- <script src='http://code.jquery.com/jquery-latest.js'></script> -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  -->
+
+        <script src="js/jquery.js"></script>
+        <script src='js/dashboard.js'></script>
+        <script src="js/notification_bell.js"></script>
+        <script src="js/dashboard-staff.js"></script>
+</body>
+
+</html>

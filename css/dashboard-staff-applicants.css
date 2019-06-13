@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100|Poppins:200|ZCOOL+KuaiLe');
+
+
+/* Here is the content */
+
+main {
+    padding: 0 15px;
+}
+
+main h2 {
+    color: #ccc;
+    /* margin-bottom: 20px; */
+    text-align: center;
+}
+
+.my_content {
+    color: #ccc;
+    margin-top: 50px;
+}
+
+.my_content .table_content {
+    max-height: 1000px;
+    overflow: auto;
+}
+
+.my_content table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.my_content table thead {
+    /* border: 1px solid green; */
+}
+
+.my_content table thead th {
+    height: 80px;
+}
+
+.my_content table .img {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+
+.my_content table .img img {
+    border-radius: 50%;
+}
+
+/* table body starts here */
+.my_content table tbody tr {
+    height: 70px;
+}
+
+.my_content table tbody tr:nth-of-type(even) {
+    background: #44445877;
+}
+
+.my_content table tbody a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 1px;
+    /* width: 100px; */
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-bg);
+    color: #ccc;
+}
+
+.my_content table tbody .remove {
+    background: rgba(211, 11, 11, 0.61);
+    /* padding: 10px 5px; */
+    margin-left: 10px;
+}
+
+
+
+/* modals */
+.my_content .remove_modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    border-radius: 5px;
+    background-color: #ccc;
+    padding: 50px 30px;
+    animation: anim 0.2s ease-in;
+}
+
+@keyframes anim {
+    from {
+        transform: translate(-50%, -50%) scale(0.2);
+        opacity: 0.4;
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+.my_content .remove_modal p {
+    margin-bottom: 40px;
+}
+
+.my_content .remove_modal div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.my_content .remove_modal div a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    /* width: 100px; */
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #ccc;
+}
+
+.my_content .remove_modal div a:first-child {
+    background-color: rgba(24, 114, 24, 0.568);
+}
+
+.my_content .remove_modal div a:last-child {
+    background-color: rgba(178, 34, 34, 0.466);
+    margin-left: 20px;
+}
+
+.my_content .remove_modal i {
+    margin-bottom: 10px;
+    /* text-align: right;
+    margin: auto; */
+    justify-self: flex-end
+}

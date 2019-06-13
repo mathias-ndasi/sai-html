@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="css/dashboard.css"> -->
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/dashboard-profile-edit.css">
+</head>
+
+
+<body>
+
+    <aside class="side-nav" id="show-side-navigation1">
+        <div class="heading">
+            <img src="img/profile.jpg" alt="profile_image">
+            <div class="info">
+                <h3><a href="dashboard-profile.html">Patricia</a></h3>
+                <p>Can't seem to rest because of internship</p>
+            </div>
+        </div>
+
+        <ul class="categories">
+
+            <li>
+                <i class="fa fa-folder"></i>
+                <a href="#" class="arrow"> Application</a>
+                <ul class="side-nav-dropdown">
+                    <li><a href="dashboard-new-application.html">New Application</a></li>
+                    <li><a href="dashboard-old-application.html">Old Application</a></li>
+                </ul>
+            </li>
+
+            <!-- <li>
+                <i class="fa fa-file-text-o"></i>
+                <a href="#"> View Reslults</a>
+            </li> -->
+
+            <li>
+                <i class="fa fa-user"></i>
+                <a href="dashboard-profile.html"> Profile</a>
+            </li>
+
+            <li>
+                <i class="fa fa-gear"></i>
+                <a href="#" class="arrow"> Settings</a>
+                <ul class="side-nav-dropdown">
+                    <li><a href="dashboard-change-password.html">Change Password</a></li>
+                    <li><a href="dashboard-change-email.html">Change Email</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+
+    <section id="contents">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header mynav">
+                <a class="navbar-brand" href="student_dashboard.html"><span class="main-color"><i
+                            class="fa fa-home fa-fw"></i></span>Dashboard</a>
+
+                <form action="" method="post">
+                    <button type="submit"><span class="log-out"><i class="fa fa-sign-out"></i></span> Log
+                        out</button>
+                </form>
+
+                <span class="drop-bar" id="drop_bar"><i class="fa fa-bars"></i></span>
+            </div>
+
+            <div class="drop_aside">
+                <ul class="categories">
+
+                    <li>
+                        <i class="fa fa-folder"></i>
+                        <a href="#" class="arrow"> Application</a>
+                        <ul class="resize-nav-dropdown">
+                            <li><a href="dashboard-new-application.html">New Application</a></li>
+                            <li><a href="dashboard-old-application.html">Old Application</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- <li>
+                        <i class="fa fa-file-text-o"></i>
+                        <a href="#"> View Reslults</a>
+                    </li> -->
+
+                    <li>
+                        <i class="fa fa-user"></i>
+                        <a href="dashboard-profile.html"> Profile</a>
+                    </li>
+
+                    <li>
+                        <i class="fa fa-gear"></i>
+                        <a href="#" class="arrow"> Settings</a>
+                        <ul class="resize-nav-dropdown">
+                            <li><a href="dashboard-change-password.html">Change Password</a></li>
+                            <li><a href="dashboard-change-email.html">Change Email</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        <!-- this is where i'm starting -->
+        <main>
+            
+            <!-- error and messages -->
+            <div class="alert">
+                <ul>
+                    <li class="error"><span>This is an error message span</span><span><i class="fa fa-times"></i></span>
+                    </li>
+                    <li class="success"><span class="message">This is a success message</span><span><i
+                                class="fa fa-times"></i></span></li>
+                </ul>
+            </div>
+        
+            <!-- body of the dashboard -->
+            <div class="profile_content_edit">
+                <div class="profile_heading">
+                    <h2>Profile Edit</h2>
+                </div>
+
+                <div class="form">
+                    <form action="">
+                        <div class="profile_input">
+                            <div>
+                                <div class="group">
+                                    <div>
+                                        <span><i class="fa fa-user"></i></span>
+                                        <input type="text" name="" id="" placeholder="First Name" required>
+                                    </div>
+                                    <div>
+                                        <span class="errors">Name is required</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="group">
+                                    <div>
+                                        <span><i class="fa fa-user"></i></span>
+                                        <input type="text" name="" id="" placeholder="Last Name">
+                                    </div>
+                                    <div>
+                                        <span class="errors">Name is required</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile_input">
+                            <div>
+                                <div class="group">
+                                    <div>
+                                        <span><i class="fa fa-mercury"></i></span>
+                                        <select name="gender" id="" required>
+                                            <option value="gender">Select Gender</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <span class="errors">gender is required</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="group">
+                                    <div>
+                                        <span><i class="fa fa-calendar"></i></span>
+                                        <input type="date" name="" id="" placeholder="Date of Birth" required>
+                                    </div>
+                                    <div>
+                                        <span class="errors">birth date is required</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile_input">
+                            <div>
+                                <div class="group">
+                                    <div>
+                                        <span><i class="fa fa-flag"></i></span>
+                                        <input type="text" name="" id="" placeholder="Nationality" required>
+                                    </div>
+                                    <div>
+                                        <span class="errors">nationality is required</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="group">
+                                    <div>
+                                        <span><i class="fa fa-globe"></i></span>
+                                        <select name="country" id="" required>
+                                            <option value="country">Select Resident Country</option>
+                                            <option value="cameroon">Cameroon</option>
+                                            <option value="nigeria">Nigeria</option>
+                                            <option value="togo">Togo</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <span class="errors">country is required</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile_input">
+                            <div>
+                                <div class="group">
+                                    <div>
+                                        <span><i class="fa fa-map-marker"></i></span>
+                                        <input type="text" name="" id="" placeholder="City" required>
+                                    </div>
+                                    <div>
+                                        <span class="errors">city is required</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="group">
+                                    <div>
+                                        <span><i class="fa fa-phone"></i></span>
+                                        <input type="tel" name="" id="" placeholder="Phone" required>
+                                    </div>
+                                    <div>
+                                        <span class="errors">phone number is required</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="submit">
+                            <button type="submit">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- <script src='http://code.jquery.com/jquery-latest.js'></script> -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  -->
+
+        <script src="js/jquery.js"></script>
+        <!-- <script src="js/bootstrap.min.js"></script> -->
+
+        <script src='js/dashboard.js'></script>
+</body>
+
+</html>

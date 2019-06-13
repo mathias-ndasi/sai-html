@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100|Poppins:200|ZCOOL+KuaiLe');
+
+
+/* Here is the content */
+
+main {
+    padding: 0 15px;
+}
+
+main .table_content h2 {
+    color: #ccc;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.my_content {
+    color: #ccc;
+    margin-top: 50px;
+}
+
+.my_content table {
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.my_content table thead {
+    /* border: 1px solid green; */
+}
+
+.my_content table thead th {
+    height: 80px;
+}
+
+.my_content table .img {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+}
+
+.my_content table .img img {
+    border-radius: 50%;
+}
+
+/* table body starts here */
+.my_content table tbody tr {
+    height: 70px;
+}
+
+.my_content table tbody tr:nth-of-type(even) {
+    background: #44445877;
+}
+
+
+/* total */
+.my_content .total {
+    margin: 20px auto 60px auto;
+}
+
+.my_content .total p {
+    font-size: 20px;
+}
+
+.my_content .total span {
+    margin: auto 5px auto 10px;
+}
+
+/* print */
+.my_content .print {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 50px 100px;
+}
+
+.my_content .print button {
+    display: block;
+    text-decoration: none;
+    padding: 10px 40px;
+    text-align: center;
+    color: #ccc;
+    border: none;
+    border-radius: 5px;
+    background: var(--button-bg);
+    cursor: pointer;
+}
